@@ -1,0 +1,17 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+blockquote, body, button, code, dd, div, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, td, textarea, th, ul { margin: 0px; padding: 0px; }
+fieldset, img { border: 0px none; }
+a, img { vertical-align: top; }
+a { background: transparent none repeat scroll 0px 0px; }
+a:active, a:hover { outline: 0px none; }
+a, a:hover { text-decoration: none; }
+:focus { outline: 0px none; }
+address, caption, cite, code, dfn, em, optgroup, th, var { font-style: normal; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+button, input, optgroup, option, select, textarea { font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; }
+button, code, input, kbd, samp, select, textarea, tt { font-size: 100%; }
+li, ol, ul { list-style: outside none none; }
+table { border-collapse: collapse; border-spacing: 0px; }
+em, i { font-style: normal; }
+body { font: 12px/1.5 tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,微软雅黑,宋体,sans-serif; color: rgb(51, 51, 51); min-width: 1000px; }
+a { color: rgb(51, 51, 51); }
