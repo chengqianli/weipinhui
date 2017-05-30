@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/regist_login_com.css" />
+		<link rel="stylesheet" type="text/css" href="../css/regist.css" />
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../font/iconfont.js"></script>
+		<script src="../js/regist.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.icon {
+				width: 1em;
+				height: 1em;
+				vertical-align: -0.15em;
+				fill: currentColor;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="layout">
+			<div class="header">
+				<a href="" class="head-logo"></a>
+				<p></p>
+			</div>
+			<div class="regist">
+				<div class="regist_con">
+					<div class="regHeader">
+						<span>欢迎注册</span>
+						<span>已注册可<a href="login.html">直接登录</a></span>
+					</div>
+					<div class="regForm">
+						<form>
+							<!--手机号码提示信息-->
+							<div class="ui-tooltips">
+								<div class="ok">
+									<p>请输入您的11位手机号码</p>
+									<span></span>
+								</div>
+								<div class="error">
+									<p>
+										<svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-weixian"></use>
+										</svg>
+										手机号不能为空</p>
+									<span></span>
+								</div>
+								<div class="error">
+									<p>
+										<svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-weixian"></use>
+										</svg>
+										请输入正确的电话号码</p>
+									<span></span>
+								</div>
+
+							</div>
+							<div class="inputs">
+								<input type="text" name="" id="tel" class="txt" placeholder="请输入手机号码" />
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-lvseduihao-da"></use>
+								</svg>
+							</div>
+							<!--密码提示-->
+							<div class="ui-tooltips" id="pw-tool">
+								<div class="ok">
+									<p>密码由6-20位字母，数字和符号至少两种以上字符组合，区分大小写</p>
+									<span></span>
+								</div>
+								<div class="error">
+									<p>
+										<svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-weixian"></use>
+										</svg>
+										密码不能为空</p>
+									<span></span>
+								</div>
+								<div class="error">
+									<p>
+										<svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-weixian"></use>
+										</svg>
+										密码至少六位</p>
+									<span></span>
+								</div>
+								<div class="error">
+									<p>
+										<svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-weixian"></use>
+										</svg>
+										密码不能为纯数字</p>
+									<span></span>
+								</div>
+
+							</div>
+							<div class="inputs">
+								<input type="password" name="" id="pw" class="txt" placeholder="密码由6-20位字母,数字和符号组合" />
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-lvseduihao-da"></use>
+								</svg>
+							</div>
+							<div class="qiangdu">
+								<span class="qd"></span>
+								<span class="qd"></span>
+								<span class="qd"></span>
+								<span>弱</span>
+							</div>
+							<!--再次输入密码提示信息-->
+							<div class="ui-tooltips" id="re-pw">
+								<div class="error">
+									<p>
+										<svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-weixian"></use>
+										</svg>
+										请再次输入以上密码</p>
+									<span></span>
+								</div>
+								<div class="error">
+									<p>
+										<svg class="icon" aria-hidden="true">
+											<use xlink:href="#icon-weixian"></use>
+										</svg>
+										对不起！两次密码不一致</p>
+									<span></span>
+								</div>
+
+							</div>
+							<div class="inputs">
+								<input type="password" name="" id="re-pw" class="txt" placeholder="请再次输入上面的密码" />
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-lvseduihao-da"></use>
+								</svg>
+							</div>
+							<input type="text" name="" id="get-num" value="" placeholder="短信验证码" />
+							<a href="" id="post-num">获取验证码</a>
+							<a href="" id="reg-btn">立即注册</a>
+							<a href="" class="eml">通过邮箱注册&gt;&gt;</a>
+							<input type="checkbox" checked="checked" name="" id="" value="" />我已阅读并接受
+							<a href="" class="xieyi">唯品会服务条款。</a>
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p>Copyright 2008-2017 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,93 @@
+
+.layout .regist .regist_con .regForm{
+	width:300px;
+	min-height: 400px;
+	float: right;
+	margin-top:50px;
+	font-size: 14px;
+	margin-right: 100px;
+}
+.regHeader{
+	margin:20px 0;
+}
+.un input,.pw input{
+	width:85%;
+	height: 30px; 
+	outline: none;
+	border-radius: 5px;
+	border:1px solid #999;
+}
+.info{
+	visibility: hidden;
+	color: #f10582;
+}
+.login_btn a{
+	display: block;
+	padding:10px;
+	background: #f10582;
+	width:30%;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	
+}
+.zimi p span a:hover{
+	color: #f10582;
+}
+.zimi p .free{
+	color: #f10582;
+}
+.other{
+	margin-top:20px;
+}
+.jiaobiao{
+	display: inline-block;
+	border-width: 4px 4px 0;
+	border-style: solid;
+	border-color: #999 transparent transparent;
+}
+.clk_jiaobiao{
+	display: inline-block;
+	border-width: 0 4px 4px;
+	border-style: solid;
+	border-color:  transparent transparent #999;
+}
+.more:hover{
+	color: #f10582;
+}
+.more:hover .jiaobiao{
+	display: inline-block;
+	border-width: 0 4px 4px;
+	border-style: solid;
+	border-color: transparent transparent #f10582 ;
+}
+.other p a{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+
+}
+.other p a{
+	background: url(../imgs/icon.jpg)left top no-repeat;
+}
+.other p .qq{
+	background-position:-24px 0;
+}
+.other p .zhifubao{
+	background-position:-50px 0;
+}
+.other p .weixin{
+	background-position:-77px 0;
+}
+.other .other-con{
+	display: none;
+}
+.other .other-con a:hover{
+	color: #f10582;
+}
+.other .other-con a{
+	display: inline-block;
+	width:65px;
+	text-align: center;
+}

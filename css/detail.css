@@ -1,0 +1,11 @@
+#main{
+	width:1000px;
+	min-height: 500px;
+	height: auto!important;
+	height: 500px;
+	background: #09f;
+	margin:0 auto;
+}
+#main .shop-detail .place-info a:hover{
+	color: #F10582;
+}

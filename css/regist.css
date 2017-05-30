@@ -1,0 +1,154 @@
+
+/*注册部分*/
+.layout .regist .regist_con{
+	margin-right: 100px;
+	width:250px;
+	height: 400px;
+	float: right;
+	margin-top:50px;
+}
+.layout .regist .regist_con .regHeader{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.layout .regist .regist_con .regHeader span:nth-of-type(2){
+	float: right;
+}
+.layout .regist .regist_con .regHeader span a{
+	color: #f10582;
+}
+.layout .regist .regist_con .regHeader span a:hover{
+	text-decoration: underline;
+}
+.layout .regist .regist_con .regForm{
+	position: relative;
+}
+.layout .regist .regist_con .regForm .inputs svg{
+
+	display: none;
+}
+.layout .regist .regist_con .regForm .txt{
+	width:90%;
+	height: 30px;
+	margin:15px 0;
+	border:1px solid #999;
+}
+.layout .regist .regist_con .regForm input{
+	border-radius: 5px;
+	outline: none;
+	border:none;
+}
+.layout .regist .regist_con .regForm #pw{
+	margin-bottom:0;
+}
+.layout .regist .regist_con .regForm #re-pw{
+	margin-top:0;
+}
+.layout .regist .regist_con .regForm .qiangdu{
+	width:100%;
+	height: 20px;
+	margin:5px 0;
+	line-height: 20px;
+	visibility: hidden;
+}
+.layout .regist .regist_con .regForm .qiangdu .qd{
+	display: inline-block;
+	width:30px;
+	height: 10px;
+	background: #999;
+}
+.layout .regist .regist_con .regForm #get-num{
+	width:50%;
+	border:1px solid #999;
+	height: 30px;
+	margin:10px 0;
+}
+.layout .regist .regist_con .regForm #post-num{
+	display: inline-block;
+	width:40%;
+	height: 30px;
+	float: right;
+	margin:10px 0;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+	background: #555;
+	
+}
+.layout .regist .regist_con .regForm .bg-pink{
+	background: lightpink;
+	border:1px solid pink;
+	border:1px solid red;
+}
+.layout .regist .regist_con .regForm #reg-btn{
+	display: inline-block;
+	border-radius: 5px;
+	width:50%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background: #f10582;
+	color: #fff;
+	margin:10px 20px 10px 0;
+}
+.layout .regist .regist_con .regForm .eml{
+	color: #000099;
+	margin-top:30px;
+	display: inline-block;
+}
+.layout .regist .regist_con .regForm .xieyi{
+	color: red;
+}
+.layout .regist .regist_con .regForm .xieyi:hover{
+	color: #f10582;
+}
+/*注册时的提示信息*/
+svg{
+	font-size: 16px;
+}
+.layout .regist .regist_con .regForm .ui-tooltips div{
+	padding:5px;
+	position: absolute;
+	top:-18px;
+	left: 0;
+	border-radius: 3px;
+}
+.layout .regist .regist_con .regForm #pw-tool div{
+	padding:5px;
+	position: absolute;
+	top:45px;
+	left: 0;
+	border-radius: 3px;
+}
+.layout .regist .regist_con .regForm #re-pw div{
+	padding:5px;
+	position: absolute;
+	top:105px;
+	left: 0;
+	border-radius: 3px;
+}
+.layout .regist .regist_con .regForm .ui-tooltips .error span{
+	border-color:  lightpink transparent transparent;
+}
+.layout .regist .regist_con .regForm .ui-tooltips .ok span{
+	border-color:  #5CB85C transparent transparent;
+}
+.layout .regist .regist_con .regForm .ui-tooltips div span{
+	display: inline-block;
+	border-width: 4px 4px 0;
+	border-style: solid;
+	position: absolute;
+	bottom: -4px;
+	left: 10px;
+}
+.layout .regist .regist_con .regForm .ui-tooltips .ok{
+	border:1px solid #5CB85C;
+	background: #fff;
+	display: none;
+}
+.layout .regist .regist_con .regForm .ui-tooltips .error{
+	border:1px solid lightpink;
+	background: #fff;
+	display: none;
+}
+

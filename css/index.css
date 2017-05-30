@@ -1,0 +1,408 @@
+/*index内容区样式开始*/
+
+.index-content-box {
+	margin-top: 140px;
+	width: 100%;
+	min-height: 500px;
+	background: url(../imgs/14948175903179.jpg) no-repeat center top;
+	overflow: hidden;
+}
+
+.index-content-box .index-content {
+	width: 940px;
+	height: 380px;
+	margin: 50px auto 0;
+	padding: 10px;
+	position: relative;
+}
+
+.index-content-box .index-content .center-con {
+	width: 940px;
+	height: 340px;
+}
+
+.index-content-box .index-content .center-con ul li {
+	position: absolute;
+	z-index: 0;
+}
+
+.index-content-box .index-content .center-con ul li img {
+	width: 940px;
+	height: 340px;
+}
+
+.index-content-box .index-content .center-con span {
+	position: absolute;
+	top: 150px;
+	width: 20px;
+	height: 20px;
+	z-index: 5;
+	cursor: pointer;
+	display: none;
+}
+
+.index-content-box .index-content .center-con .right {
+	right: 70px;
+}
+
+.index-content-box .index-content .banner-txt ul {
+	width: 940px;
+	display: flex;
+	justify-content: center;
+}
+
+.index-content-box .index-content .banner-txt ul li {
+	width: 200px;
+	text-align: center;
+	margin: 15px 0 0;
+	cursor: pointer;
+}
+
+.index-content-box .index-content .underline {
+	margin-top: 10px;
+	width: 200px;
+	height: 3px;
+	background: #f10582;
+	position: absolute;
+	left: 75px;
+}
+
+.shop-title {
+	width: 1000px;
+	height: 80px;
+	margin: 0 auto;
+	background: url(../imgs/today_DDp.png) no-repeat;
+	margin-top: 10px;
+}
+
+#jxs {
+	width: 1000px;
+	min-height: 800px;
+	margin: 0 auto;
+	height: auto!important;
+	height: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#jxs .jx-good {
+	width: 49%;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+}
+
+#jxs .jx-good .good-pro {
+	width: 90%;
+	height: 90%;
+	background: #fff;
+	border-radius: 5px;
+	display: none;
+}
+
+#jxs .jx-good .good-pro .good-img {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 70%;
+	border-bottom: 1px dashed #000;
+	margin-bottom: 20px;
+}
+
+#jxs .jx-good .good-pro .good-img a {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#jxs .jx-good .good-pro .good-img img {
+	width: 100%;
+	height: 85%;
+	margin-top: 10px;
+}
+
+#jxs .jx-good .good-pro .good-img p {
+	text-align: center;
+	font-size: 16px;
+}
+
+#jxs .jx-good .good-pro .logo {
+	width: 100px;
+	height: 50px;
+	margin: 6px 0 3px;
+	margin-left: 29px;
+	margin-right: 20px;
+}
+
+#jxs .jx-good .good-pro .shoucang {
+	margin-top: 30px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#jxs .jx-good .good-pro .shoucang:hover {
+	color: #f10582;
+}
+
+#jxs .jx-good .good-pro .login {
+	display: inline-block;
+	margin-top: 30px;
+	width: 100px;
+	height: 30px;
+	background: #f10582;
+	text-align: center;
+	color: #fff;
+	line-height: 30px;
+	border-radius: 5px;
+	margin-left: 30px;
+}
+
+#J-index-floor {
+	width: 1000px;
+	min-height: 3000px;
+	height: auto!important;
+	height: 3000px;
+	margin: 0 auto;
+}
+
+#J-index-floor .title {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 20px;
+}
+
+#J-index-floor .title a {
+	display: inline-block;
+	float: right;
+	font-size: 16px;
+}
+
+#J-index-floor .title a:hover {
+	color: #f10582;
+}
+
+#J-index-floor .brand-box {
+	width: 100%;
+	min-height: 855px;
+	height: auto!important;
+	height: 855px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#J-index-floor .brand-box .brand-item {
+	width: 49%;
+	height: 275px;
+	margin: 30px 0;
+	font-size: 14px;
+}
+
+#J-index-floor .brand-box .brand-item img {
+	width: 100%;
+	height: 100%;
+}
+
+#J-index-floor .brand-box .brand-item .brand-info {
+	width: 490px;
+	height: 60px;
+	line-height: 28px;
+	position: relative;
+}
+
+#J-index-floor .brand-box .brand-item .brand-info .right {
+	display: inline-block;
+	float: right;
+}
+
+#J-index-floor .brand-box .brand-item .brand-info .right svg {
+	font-size: 16px;
+	font-weight: 800;
+	color: #f10582;
+}
+
+#J-index-floor .brand-box .brand-item .brand-info a:nth-of-type(2) {
+	line-height: 25px;
+	text-align: center;
+}
+
+#J-index-floor .brand-box .brand-item .brand-info .shoucang:hover {
+	background: #F10582;
+	color: #fff;
+}
+
+#J-index-floor .brand-box .brand-item .brand-info .shoucang:hover svg {
+	color: #fff;
+}
+
+#J-index-floor .brand-box .brand-item .brand-info .shoucang svg {
+	color: #F10582;
+	font-size: 16px;
+}
+
+#J-index-floor .brand-box .brand-item .brand-info .shoucang {
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	top: -60px;
+	display: none;
+	background: #fff;
+	width: 100px;
+	height: 25px;
+	border-radius: 10px;
+}
+
+.more-brand {
+	width: 100%;
+	height: 50px;
+	margin: 15px auto 30px;
+	text-align: center;
+	line-height: 50px;
+	border-top: 1px solid #ddd;
+}
+
+.more-brand a:hover {
+	opacity: .7;
+}
+
+.more-brand a {
+	display: inline-block;
+	width: 200px;
+	height: 100%;
+	background: #F10582;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 0 0 5px 5px;
+}
+
+#tomorrow {
+	width: 1000px;
+	min-height: 500px;
+	height: auto!important;
+	height: 500px;
+	margin: 0 auto;
+}
+
+#tomorrow .title img {
+	width: 1000px;
+	height: 60px;
+}
+
+#tomorrow #tomorrow-goods {
+	width: 1000px;
+	min-height: 500px;
+	height: auto!important;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#tomorrow #tomorrow-goods .tom-item {
+	width: 30%;
+	height: 195px;
+	position: relative;
+	margin: 10px 0;
+}
+
+#tomorrow #tomorrow-goods .tom-item .good {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 5px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	right: 100px;
+	top: 80px;
+}
+
+#tomorrow #tomorrow-goods .tom-item img {
+	width: 100%;
+	height: 155px;
+}
+
+#tomorrow #tomorrow-goods .tom-item .item-info .shoucang {
+	position: absolute;
+	right: 20px;
+	display: none;
+	bottom: 60px;
+	background: #fff;
+	padding: 2px 3px;
+	border-radius: 7px;
+}
+
+#tomorrow #tomorrow-goods .tom-item .item-info .shoucang svg {
+	color: #F10582;
+	font-size: 16px;
+}
+
+#tomorrow #tomorrow-goods .tom-item .tel input {
+	border: none;
+	outline: none;
+}
+
+#tomorrow #tomorrow-goods .tom-item .tel {
+	display: none;
+	height: 20px;
+	line-height: 20px;
+	width: 62%;
+	border: 1px solid #aaa;
+}
+
+#tomorrow #tomorrow-goods .tom-item .tel a {
+	color: #09f;
+}
+
+#tomorrow #tomorrow-goods .tom-item .item-info .shoucang:hover {
+	background: #F10582;
+	color: #fff;
+}
+
+#tomorrow #tomorrow-goods .tom-item .item-info .shoucang:hover svg {
+	color: #fff;
+}
+
+
+/*首页左边楼梯*/
+
+.stair{
+	width: 60px;
+	border: 1px solid #aaa;
+	text-align: center;
+	position: fixed;
+	left: 5%;
+	top: 20%;
+	display: none;
+	background-color: #fff;
+}
+
+.stair a{
+	display: block;
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	margin: 10px 5px;
+	cursor: pointer;
+
+	padding:3px 0;
+	border-radius: 3px;
+	border-bottom: 1px solid #aaa;
+}
+
+.stair a span {
+	width: 50px;
+	height: 20px;
+	/*display: none;*/
+}
+
+.stair a.hover{
+	background: #F10582;
+	border-bottom: none;
+	color: #fff;
+}

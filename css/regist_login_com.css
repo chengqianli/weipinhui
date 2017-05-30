@@ -1,0 +1,60 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+blockquote, body, button, code, dd, div, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, td, textarea, th, ul { margin: 0px; padding: 0px; }
+fieldset, img { border: 0px none; }
+a, img { vertical-align: top; }
+a { background: transparent none repeat scroll 0px 0px; }
+a:active, a:hover { outline: 0px none; }
+a, a:hover { text-decoration: none; }
+:focus { outline: 0px none; }
+table,tr,th,td{border:none;}
+address, caption, cite, code, dfn, em, optgroup, th, var { font-style: normal; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+button, input, optgroup, option, select, textarea { font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; }
+button, code, input, kbd, samp, select, textarea, tt { font-size: 100%; }
+li, ol, ul { list-style: outside none none; }
+table { border-collapse: collapse; border-spacing: 0px; }
+em, i { font-style: normal; }
+body { font: 12px/1.5 tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,微软雅黑,宋体,sans-serif; color: rgb(51, 51, 51); min-width: 1000px; }
+a { color: rgb(51, 51, 51); }
+body,html{
+	background: #fcfafd;
+}
+
+.layout{
+	width:1000px;
+	min-height: 600px;
+	height: auto!important;
+	height: 600px;
+	overflow: hidden;
+	margin:0 auto;
+}
+.layout .header{
+	width:1000px;
+	height: 72px;
+	margin:50px auto;
+
+	line-height: 72px;
+}
+.layout .header a{
+	display: inline-block;
+	width:500px;
+	height: 72px;
+	background: url(../imgs/normalLogin_sprite.png) no-repeat ;
+}
+.layout .header p{
+	width:445px;
+	height: 30px;
+	margin-top:20px;
+	float: right;
+	background: url(../imgs/sp2.png) no-repeat center -452px;
+}
+.layout .regist{
+	width:1000px;
+	height: 600px;
+	margin:0 auto;
+	background: url(../imgs/14906736174487.jpg) no-repeat center top;
+}
+/*尾部*********************/
+.layout .footer{
+	text-align: center;
+}
