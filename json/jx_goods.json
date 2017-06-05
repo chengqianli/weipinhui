@@ -1,53 +1,53 @@
 [
 	
 		{
-		"bg_img":"imgs/INSUN_jsxf.jpg",
-		"goods_img":["imgs/9aac4t.jpg","imgs/cd399a_t.jpg","imgs/E-904-5.jpg"],
+		"bg_img":"../imgs/INSUN_jsxf.jpg",
+		"goods_img":["../imgs/9aac4t.jpg","../imgs/cd399a_t.jpg","../imgs/E-904-5.jpg"],
 		"goods_price":["￥598","￥888","￥693"],
-		"logo":"imgs/primary.png"
+		"logo":"../imgs/primary.png"
 		},
 		{
-			"bg_img":"imgs/23178502.jpg",
-			"goods_img":["imgs/1013350010501-5.jpg","imgs/008-5.jpg","imgs/yy5.jpg"],
+			"bg_img":"../imgs/23178502.jpg",
+			"goods_img":["../imgs/1013350010501-5.jpg","../imgs/008-5.jpg","../imgs/yy5.jpg"],
 			"goods_price":["￥778","￥436","￥998"],
-			"logo":"imgs/primy.png"
+			"logo":"../imgs/primy.png"
 		},
 		{
-			"bg_img":"imgs/GIORGIOFABIANI_isge.jpg",
-			"goods_img":["imgs/4c8321.jpg","imgs/e94-ebe193532473.jpg","imgs/5-bf010441923f.jpg"],
+			"bg_img":"../imgs/GIORGIOFABIANI_isge.jpg",
+			"goods_img":["../imgs/4c8321.jpg","../imgs/e94-ebe193532473.jpg","../imgs/5-bf010441923f.jpg"],
 			"goods_price":["￥98","￥88","￥63"],
-			"logo":"imgs/ary.png"
+			"logo":"../imgs/ary.png"
 		},
 		{
-			"bg_img":"imgs/INSUN_jsxf.jpg",
-			"goods_img":["imgs/9aac4t.jpg","imgs/cd399a_t.jpg","imgs/E-904-5.jpg"],
+			"bg_img":"../imgs/INSUN_jsxf.jpg",
+			"goods_img":["../imgs/9aac4t.jpg","../imgs/cd399a_t.jpg","../imgs/E-904-5.jpg"],
 			"goods_price":["￥598","￥888","￥693"],
-			"logo":"imgs/primary.png"
+			"logo":"../imgs/primary.png"
 		},
 		{
-			"bg_img":"imgs/06375257.jpg",
-			"goods_img":["imgs/9aac4t.jpg","imgs/851841E-80-5.jpg","imgs/851056E-88-5.jpg"],
+			"bg_img":"../imgs/06375257.jpg",
+			"goods_img":["../imgs/9aac4t.jpg","../imgs/851841E-80-5.jpg","../imgs/851056E-88-5.jpg"],
 			"goods_price":["￥598","￥888","￥693"],
-			"logo":"imgs/prima.png"
+			"logo":"../imgs/prima.png"
 		},
 		
 		{
-			"bg_img":"imgs/converse_gqhz.jpg",
-			"goods_img":["imgs/9aac4t.jpg","imgs/cd399a_t.jpg","imgs/a31feb4de86.jpg"],
+			"bg_img":"../imgs/converse_gqhz.jpg",
+			"goods_img":["../imgs/9aac4t.jpg","../imgs/cd399a_t.jpg","../imgs/a31feb4de86.jpg"],
 			"goods_price":["￥598","￥888","￥693"],
-			"logo":"imgs/2758241.jpg"
+			"logo":"../imgs/2758241.jpg"
 		},
 		{
-			"bg_img":"imgs/Ipanemagrendha_witm.jpg",
-			"goods_img":["imgs/a31feb4de86.jpg","imgs/a6d7.jpg","imgs/E-904-5.jpg"],
+			"bg_img":"../imgs/Ipanemagrendha_witm.jpg",
+			"goods_img":["../imgs/a31feb4de86.jpg","../imgs/a6d7.jpg","../imgs/E-904-5.jpg"],
 			"goods_price":["￥598","￥888","￥693"],
-			"logo":"imgs/09483913.jpg"
+			"logo":"../imgs/09483913.jpg"
 		},
 		{
-			"bg_img":"imgs/06375257.jpg",
-			"goods_img":["imgs/9aac4t.jpg","imgs/a31feb4de86.jpg","imgs/E-904-5.jpg"],
+			"bg_img":"../imgs/06375257.jpg",
+			"goods_img":["../imgs/9aac4t.jpg","../imgs/a31feb4de86.jpg","../imgs/E-904-5.jpg"],
 			"goods_price":["￥598","￥888","￥693"],
-			"logo":"imgs/priry.png"
+			"logo":"../imgs/priry.png"
 		}
 	
 

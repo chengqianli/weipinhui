@@ -1,7 +1,7 @@
 /*index内容区样式开始*/
 
 .index-content-box {
-	margin-top: 140px;
+	/*margin-top: 140px;*/
 	width: 100%;
 	min-height: 500px;
 	background: url(../imgs/14948175903179.jpg) no-repeat center top;

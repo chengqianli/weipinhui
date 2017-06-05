@@ -1,0 +1,101 @@
+<script src="../js/template.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+
+<div class="footer-con">
+	<div class="footer-top">
+
+	</div>
+	<div class="footer-cen"></div>
+	<div class="erweima">
+		<p>唯品会二维码</p>
+		<img src="../imgs/page_bottom_dl_n.png" />
+		<p>下载唯品会移动APP</p>
+	</div>
+	<div class="footer-nav">
+		<ul>
+			<li>
+				<a href="">关于我们</a>|</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="">About us</a>|</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="">Investor Relations</a>|</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="">媒体报道</a>|</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="">品牌招商</a>|</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="">隐私条款</a>|</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="">唯品诚聘</a>|</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="">365爱心基金</a>|</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="">唯品卡</a>|</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="">唯品地图</a>|</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="">品牌大全</a>|</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="">联系我们</a>
+			</li>
+		</ul>
+	</div>
+	<div class="foot-bot">
+		<p>Copyright &copy; 2008-2017 vip.com，All Rights Reserved 使用本网站即表示接受
+			<a href="">唯品会用户协议</a>。版权所有
+			<a href=""> 广州唯品会信息科技有限公司</a>
+		</p>
+		<p>
+			<a href=""><img src="../imgs/police_icon.png" />粤公网安备 44010302111111号</a>
+			<a href="">粤ICP备08114786号</a>
+			<a href="">ICP经营许可证：粤B2-20080329</a>
+			<a href="">网络文化经营许可证：粤网文〔2015〕1528-229</a>
+			<a href="">自营主体经营证照</a>
+			<a href="">风险监测信息</a>
+			<a href="">互联网药品交易服务资格证（粤C20140002）</a>
+		</p>
+		<div class="foot-img">
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+		</div>
+	</div>
+</div>
+<script id="foot" type="text/html">
+	{{each list as value}}
+	<ul>
+		<span>{{value.title}}</span> {{each value.lis as item}}
+		<a href="">
+			<li>{{item}}</li>
+		</a>
+		{{/each}}
+	</ul>
+	{{/each}}
+</script>
+<script src="../js/footer.js" type="text/javascript" charset="utf-8"></script>

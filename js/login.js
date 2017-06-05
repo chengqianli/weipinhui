@@ -40,7 +40,7 @@ $(function() {
 				}else{
 					setCookie('user',$(".un input").val(),7);
 					setCookie('password',$(".pw input").val(),7);
-					location.assign("http://127.0.0.1:8020/html/weipinhui/index.html");
+					location.assign("index.html");
 				}
 			})
 		}

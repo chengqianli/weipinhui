@@ -1,0 +1,195 @@
+<div id="J_sidebar" class="m-sidebarcom">
+	<div class="sidebar-center">
+		<ul>
+			<li class="li1">
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-wode"></use>
+					</svg>
+					账号
+				</a>
+				<div class="my-info">
+
+				</div>
+
+			</li>
+			<li class="li2" style="padding:8px;background: #f10582;">
+				<a href="">
+					<svg class="icon" aria-hidden="true" style=" margin-left: 0;">
+						<use xlink:href="#icon-gouwuche"></use>
+					</svg>
+					购物袋
+					<span class="sum">0</span>
+				</a>
+
+			</li>
+
+			<li class="li_p">
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-qiaquan"></use>
+					</svg>
+				</a>
+				<p>
+					<a href="">我的优惠券</a>
+				</p>
+			</li>
+			<li class="li_p">
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-shoucang1"></use>
+					</svg>
+				</a>
+				<p>
+					<a href="">品牌收藏</a>
+				</p>
+			</li>
+			<li class="li_p">
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-shoucang"></use>
+					</svg>
+				</a>
+				<p>
+					<a href="">商品收藏</a>
+				</p>
+			</li>
+			<li class="li_p">
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-zuji"></use>
+					</svg>
+				</a>
+				<p>
+					<a href="">我的足迹</a>
+				</p>
+			</li>
+			<p style="height: 20px;width:30px;"></p>
+		</ul>
+		<div class="sidebar-bottom">
+			<ul>
+				<li class="li_p">
+					<a href="">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#icon-bianji"></use>
+						</svg>
+					</a>
+					<p>
+						<a href="">会员反馈</a>
+					</p>
+				</li>
+				<li class="li_p back-top">
+					<a href="javascript:void(0);">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#icon-fanhui2"></use>
+						</svg>
+					</a>
+					<p>
+						<a href="">回到顶部</a>
+					</p>
+				</li>
+				<p style="height: 20px;width:30px;"></p>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="cars">
+	<div class="cars-title">
+		<span>购物袋</span>
+		<span class="close">×</span>
+	</div>
+	<div class="cars-con">
+		<img class="null-img" src="../imgs/sbar_fav_null.jpg" alt="" />
+		<p>你的购物袋还没有商品，再去逛逛吧</p>
+	</div>
+	<div class="money">
+		<p>
+			<span class="goods-sum"></span>件商品
+			<span class="money-box">￥<span class="goods-moneys"></span></span>
+		</p>
+		<a href="../html/cart.html" target="_blank">去购物袋结算</a>
+	</div>
+</div>
+<script type="text/javascript">
+	/*侧边栏*/
+	var userName = getCookie("user");
+	userName = userName ? userName : "";
+	if(userName == "") {
+		$(".my-info").html("<span>你好！请<a href=''>登录</a>|<a href=''>注册</a></span>");
+	} else {
+		$(".my-info").html("<span>你好！<a href=''>" + userName + "</a></span>");
+
+	};
+	$(".li1").hover(function() {
+		$(".my-info").stop().animate({
+			right: "30px"
+		}, 10);
+	}, function() {
+		$(".my-info").stop().animate({
+			right: "-300px"
+		}, 500);
+	});
+	$(".li_p").hover(function() {
+		$(this).find("p").stop().animate({
+			"right": "38px"
+		}, 200);
+	}, function() {
+		$(this).find("p").stop().animate({
+			"right": "-100px"
+		}, 200);
+	});
+	$(".back-top").on("click", function() {
+		$(window).scrollTop(0);
+	});
+	/*点击购物袋*/
+	$(".li2").on("click", function() {
+		$(".cars").animate({
+			"right": "38px"
+		}, 500);
+		return false;
+	});
+	$(document).on("click", function() {
+		$(".cars").animate({
+			"right": "-250px"
+		}, 500);
+	});
+	/*点击×号关闭*/
+	$(".close").on("click", function() {
+		$(".cars").animate({
+			"right": "-250px"
+		}, 500);
+	});
+	readCookie();
+	function readCookie() {
+		$.get("../json/goodsList.json", function(data) {
+			var sum = 0;
+			var prices = 0;
+			var str = getCookie("cart");
+			console.log(str)
+			var obj = str ? JSON.parse(str) : {};
+			var html = "";
+
+			if(Object.keys(obj).length!=0) {
+				$(".money").css("display","block");
+				for(var attr in obj) {
+					html+="<div class='car-box'><img src='"+data[attr].bigImg+"'><span class='car-goods-name'>"+
+					data[attr].goodsName+"</span><span class='car-goods-num'>"+obj[attr]+"</span><span class='car-goods-price'>"+data[attr].price+"</span></div>"
+					sum+=obj[attr];
+					
+				}
+				$(".cars-con").html(html);
+				for(var i = 0; i < $(".car-box").length; i++){
+					var goodsNum = parseInt($(".car-box").eq(i).find(".car-goods-num").html());
+					var goodsPrice = parseInt($(".car-box").eq(i).find(".car-goods-price").html());
+					prices+=goodsNum*goodsPrice;
+					
+				}
+				$(".cars-con .car-box:last").css({"borderBottom":"0"});
+				$(".goods-sum").html(sum);
+				$(".goods-moneys").html(prices);
+			}
+		})
+	}
+</script>
+<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/date&&cookie.js" type="text/javascript" charset="utf-8"></script>

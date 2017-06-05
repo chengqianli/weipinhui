@@ -9,6 +9,7 @@
 		<script src="../js/template.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
 		<link rel="stylesheet" type="text/css" href="../css/detail.css"/>
+		<script src="../js/date&&cookie.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
 			.icon {
 			   width: 1em; height: 1em;
@@ -20,267 +21,130 @@
 	</head>
 	<body>
 		<header id="common-header">
-			<div class="header-top">
-				<!--top的中间的内容区域-->
-				<div class="header-top-con">
-						<div class="address">
-							<span><a>河南</a></span>
-							<i class="ico-dis"></i>
-							<div class="adds">
-								<i class="add-top-border" style="width: 70px;"></i>
-								<p>请选择所在的收货地区</p>
-								<table border="" cellspacing="" cellpadding="">
-									<tr>
-										<th>A</th>
-										<td>
-											<span><a href="#">安徽</a></span>
-											<span><a href="#">澳门</a></span>
-										</td>
-									</tr>
-									<tr>
-										<th>B</th>
-										<td>
-											<span><a href="#">北京</a></span>
-										</td>
-									</tr>
-									<tr>
-										<th>Z</th>
-										<td>
-											<span><a href="#">郑州</a></span>
-										</td>
-									</tr>
-								</table>
-							</div>
-						</div>
-						<ul class="top_ul">
-							<li class="ok1" style="width: 77px;">
-								<span><a href="">请登录</a></span><!--<o>/</o>-->
-								<div class="top-nav-dis">
-								<i class="add-top-border" style="width: 76px;"></i>
-									<div class="hello-top">
-										<span><a href="">您好！[请登录]</a></span>
-										<em></em>
-									</div>
-									<p>
-										<span><a href="">我的收藏</a></span>
-										<span><a href="">我的订单</a></span>
-										<span><a href="">零钱</a></span>
-										<span><a href="">我的优惠券</a></span>
-										<span><a href="">我的唯品币</a></span>
-										<span><a href="">我的金融</a></span>
-									</p>
-								</div>
-							</li>
-							<li style="width: 65px;"><span><a href="">注册</a></span><!--<o>/</o>--></li>
-							<li style="width: 87px;"><span><a href="">我的订单</a></span><!--<o>/</o>--></li>
-							<li class="ok1" style="width: 103px;">
-								<span><a href="">我的特卖<i class="ico-dis"></i></a></span><!--<o>/</o>-->
-								<div class="my-shop">
-									<i class="add-top-border" style="width: 101px;"></i>
-									<span><a href="">品牌收藏</a></span>
-									<span><a href="">我的收藏</a></span>
-									<span><a href="">我的足迹</a></span>
-								</div>
-							</li>
-							<li class="ok1" style="width: 113px;">
-								<span><a href="">会员俱乐部<i class="ico-dis"></i></a></span><!--<o>/</o>-->
-								<div class="my-shop" style="width: 111px;">
-									<i class="add-top-border" style="width: 111px;"></i>
-									<span><a href="">俱乐部首页</a></span>
-									<span><a href="">我的收藏</a></span>
-									<span><a href="">免费抽大奖</a></span>
-								</div>
-							</li>
-							<li class="ok1" style="width: 101px;">
-								<span><a href="">客户服务<i class="ico-dis"></i></a></span><!--<o>/</o>-->
-								<div class="my-shop" style="width: 99px;">
-									<i class="add-top-border" style="width: 99px;"></i>
-									<span><a href="">联系客服</a></span>
-									<span><a href="">帮助中心</a></span>
-									<span><a href="">服务中心</a></span>
-									<span><a href="">知识产权投诉</a></span>
-								</div>
-							</li>
-							<li class="ok1" style="width: 75px;">
-								<span><a href="">手机版</a></span><!--<o>/</o>-->
-								<div class="my-ma">
-									<i class="add-top-border2" style="width: 72px; right: 0;"></i>
-									<img src="../imgs/1466134037230.jpg" style="width:155px;"/>
-									<span >
-										随时逛，及时抢
-									</span>
-								</div>
-							</li>
-							<li class="ok1" style="width: 72px;">
-								<span><a href="">更多<i class="ico-dis"></i></a></span>
-								<div class="my-ma" style="width: 200px;">
-									<i class="add-top-border2" style="width: 70px;"></i>
-									<div class="">
-										<h2>合作专区</h2>
-										<span><a href="">联名卡申请</a></span>
-										<span><a href="">唯品卡</a></span>
-									</div>
-									<div class="">
-										<h2>关于我们</h2>
-										<span><a href="">品牌招商</a></span>
-										<span><a href="">官方微博</a></span>
-									</div>
-								</div>
-							</li>
-						</ul>
-				</div>
-			</div>
-			<div class="header-logo">
-				<div class="logo-img">
-					<a href="#">
-						<img src="../imgs/1481820328776.png"/>
-					</a>
-				</div>
-				<div class="shop-car">
-					<span class="daizi">
-						<span class="sum">0</span>
-					</span>
-					<a href="" style="display:inline-block;margin: 20px 0 0 10px;">我的购物袋</a>
-					<div class="daizi-div">
-						<i class="add-top-border2" style="width: 150px; right: 0;"></i>
-						<p>好像还未登录<a href="">马上登录</a>查看购物袋吧！</p>
-					</div>
-				</div>
-				<div class="logo-center">
-					<a href=""><img src="../imgs/1466131264367.png"/></a>
-					<a href=""><img src="../imgs/1466131266290.png"/></a>
-					<a href=""><img src="../imgs/1466131268726.png"/></a>
-				</div>
-			</div>
-			<div class="main-nav">
-				<div class="nav-con">
-					<ul class="nav-left">
-						<li><a href="" style="background-color: #bd1067;">首页</a></li>
-						<li><a href="">唯品国际</a></li>
-						<li><a href="">母婴</a></li>
-						<li><a href="">家居家电</a></li>
-						<li><a href="">男士</a></li>
-						<li><a href="">美妆</a></li>
-						<li><a href="">生活</a></li>
-						<li><a href="">金融</a></li>
-						<li class="last-li">
-							<a href="">更多<span class="more"></span></a>
-							<div class="box">
-								<div class="more-div">
-									<div class="div-img"><a href=""><img src="../imgs/1467620677036.jpg" alt="" /></a></div>
-									<div class="div-img"><a href=""><img src="../imgs/1467620750077.jpg" alt="" /></a></div>
-									<div class="div-img"><a href=""><img src="../imgs/1467620773404.jpg" alt="" /></a></div>
-									<div class="div-img"><a href=""><img src="../imgs/1467620677036.jpg" alt="" /></a></div>
-									<div class="div-img"><a href=""><img src="../imgs/1467620750077.jpg" alt="" /></a></div>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<a href="">
-						<div class="yugao sm-btn">
-							<img src="../imgs/1470377501079.png"/>
-							预告
-						</div>
-					</a>
-					<a href="">
-						<div class="fenlei sm-btn">
-							<img src="../imgs/1470377526197.png"/>
-							分类
-						</div>
-					</a>
-				</div>
-			</div>
+			
 		</header>
+		<script type="text/javascript">
+			$("#common-header").load("header.html");
+		</script>
 		<div id="main">
 			<div class="shop-detail">
 				<p class="place-info"><a href="">首页></a><a href="">澳大利亚家纺专场</a>&gt;莫代尔夏凉被贝拉丝花色</p>
 				<div class="goods-detail">
 					<div class="goods-imgs">
-						<div class="goods-big-img">
-							
-						</div>
 						<div class="goods-small-img">
-							
+							<div class="img">
+								<img src="" alt="" />
+								<div id="zoom"></div>
+							</div>
+						</div>
+						<div class="list-img">
+								
+						</div>
+						<div class="product-text">
+							<p>商品编码：3334561295696</p>
+							<div class="shoucang">
+								<a href="">
+									<svg class="icon" aria-hidden="true">
+		 								<use xlink:href="#icon-shoucang"></use>
+									</svg>
+								收藏商品
+								</a>
+							</div>
+							<div class="share">
+								<span class="top">
+									<svg class="icon" aria-hidden="true">
+			 							<use xlink:href="#icon-wodeshoucangcopy"></use>
+									</svg>
+									分享到:<span class="jiao"></span>
+								</span>
+								<span class="bottom">
+									<i></i>
+									<a href="" title="分享到qq空间"></a>
+									<a href="" title="分享到qq好友"></a>
+									<a href="" title="分享到微信"></a>
+									<a href="" title="分享到新浪微博"></a>
+								</span>
+							</div>
 						</div>
 					</div>
+					
 					<div class="goods-info">
-						
+						<div class="goods-title">
+							<p>莫代尔</p>
+							<p class="gn"></p>
+						</div>
+						<div class="goods-price">
+							<span class="price">
+								<i>￥</i>
+								<em></em>
+							</span>
+							<div class="discont">
+								<i></i>
+								<br />
+								￥<em></em>
+							</div>
+							<div class="discont-infos">
+								<span class="man">满减</span>
+								<span class="jian">满198减100，上不封顶</span>
+							</div>
+						</div>
+						<div class="yunfei">
+							运费<span><i>免运费</i>（订单满288免运费） </span>
+						</div>
+						<div class="chima yunfei">
+							尺码<span>均码</span>
+						</div>
+						<div class="shuliang yunfei">
+							数量<span><b>-</b><input type="text" value="1"/><b>+</b></span>
+						</div>
+						<div class="add-car-btn">
+							<i>
+								<svg class="icon" aria-hidden="true">
+	 								 <use xlink:href="#icon-gouwuche"></use>
+								</svg>
+							</i>
+							<span>加入购物袋</span>
+						</div>
+						<div class="btn-text">
+							<p>购买最多可获149个唯品币
+								<svg class="icon" aria-hidden="true">
+	 								 <use xlink:href="#icon-bangzhu"></use>
+								</svg>
+							</p>
+							
+						</div>
+						<div class="help-info">
+								<p>
+									赠送的唯品币数量为该商品实付金额的50%；唯品币可用于在线支付时，直接抵现使用！
+								</p>
+							</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			var goodsId = (location.search).split("=")[1];
+			$.get("../json/goodsList.json",function(data){
+
+				$(".img img").attr({src:data[goodsId].bigImg});
+				for(var i = 0; i < data[goodsId].smallImg.length; i++){
+					$("<div class='img-item'><img src='"+data[goodsId].smallImg[i]+"'></div>").appendTo($(".list-img"));
+				}
+				$(".gn").html(data[goodsId].goodsName);
+				$(".add-car-btn").attr({"data-id":data[goodsId].id});
+				$(".price em").html(data[goodsId].price);
+				$(".discont i").html(data[goodsId].discont);
+				$(".discont em").html(data[goodsId].rePrice);
+				$("#main .list-img .img-item").on("click",function(){
+				var i = $(this).find("img").attr("src");
+				$("#main .goods-small-img .img img").attr({src:i});
+	});
+				
+			})
+		</script>
 				<!--底部html结构-->
 				<div id="footer">
-					<div class="footer-con">
-						<div class="footer-top">
-							
-						</div>
-						<div class="footer-cen"></div>
-						<div class="erweima">
-							<p>唯品会二维码</p>
-							<img src="../imgs/page_bottom_dl_n.png"/>
-							<p>下载唯品会移动APP</p>
-						</div>
-						<div class="footer-nav">
-							<ul>
-								<li><a href="">关于我们</a>|</li>
-							</ul>
-							<ul>
-								<li><a href="">About us</a>|</li>
-							</ul>
-							<ul>
-								<li><a href="">Investor Relations</a>|</li>
-							</ul>
-							<ul>
-								<li><a href="">媒体报道</a>|</li>
-							</ul>
-							<ul>
-								<li><a href="">品牌招商</a>|</li>
-							</ul>
-							<ul>
-								<li><a href="">隐私条款</a>|</li>
-							</ul>
-							<ul>
-								<li><a href="">唯品诚聘</a>|</li>
-							</ul>
-							<ul>
-								<li><a href="">365爱心基金</a>|</li>
-							</ul>
-							<ul>
-								<li><a href="">唯品卡</a>|</li>
-							</ul>
-							<ul>
-								<li><a href="">唯品地图</a>|</li>
-							</ul>
-							<ul>
-								<li><a href="">品牌大全</a>|</li>
-							</ul>
-							<ul>
-								<li><a href="">联系我们</a></li>
-							</ul>
-						</div>
-						<div class="foot-bot">
-							<p>Copyright &copy; 2008-2017 vip.com，All Rights Reserved  使用本网站即表示接受<a href="">唯品会用户协议</a>。版权所有<a href=""> 广州唯品会信息科技有限公司</a></p>
-							<p>
-								<a href=""><img src="../imgs/police_icon.png"/>粤公网安备 44010302111111号</a> 
-								<a href="">粤ICP备08114786号</a>  
-								<a href="">ICP经营许可证：粤B2-20080329</a> 
-								<a href="">网络文化经营许可证：粤网文〔2015〕1528-229</a>
-								<a href="">自营主体经营证照</a>
-								<a href="">风险监测信息</a>
-								<a href="">互联网药品交易服务资格证（粤C20140002）</a>
-							</p>
-							<div class="foot-img">
-								<a href=""></a>
-								<a href=""></a>
-								<a href=""></a>
-								<a href=""></a>
-								<a href=""></a>
-								<a href=""></a>
-								<a href=""></a>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 				<!--底部中间列表模板-->
 				<script id ="foot" type="text/html">
@@ -295,108 +159,16 @@
 				</script>
 				<!--底部中间列表模板js代码-->
 				<script type="text/javascript">
-						$.get("../json/footer_ul.json",function(data){
-
-							var html = template("foot",{"list":data});
-							document.getElementsByClassName("footer-cen")[0].innerHTML=html;
-							$(".footer-cen li").hover(function(){
-									
-								$(this).css({"color":"#f10582","transform":"translateX(10px)"});
-							},function(){
-								$(this).css({"color":"","transform":"translateX(0px)"});
-								
-							})
-						})
-					
+					$("#footer").load("footer.html");
 				</script>
 		
 			<!--侧边栏-->
 			<div id="J_sidebar" class="m-sidebarcom">
-				<div class="sidebar-center">
-					<ul>
-						<li class="li1">
-							<a href="">
-								<svg class="icon" aria-hidden="true">
-  									<use xlink:href="#icon-wode"></use>
-								</svg>
-								账号
-							</a>
-							<div class="my-info">
-								<span>你好！请<a href="">登录</a>|<a href="">注册</a></span>
-							</div>
-							<script type="text/javascript">
-								$(".li1").hover(function(){
-									$(".my-info").stop().animate({right:"30px"},10);
-								},function(){
-									$(".my-info").stop().animate({right:"-300px"},500);
-								})
-							</script>
-						</li>
-						<li class="li2" style="padding:8px;background: #f10582;">
-							<a href="">
-								<svg class="icon" aria-hidden="true" style=" margin-left: 0;">
-  									<use xlink:href="#icon-gouwuche"></use>
-								</svg>
-								购物袋
-							</a>
-						</li>
-						<li class="li_p">
-							<a href="">
-								<svg class="icon" aria-hidden="true">
-  									<use xlink:href="#icon-qiaquan"></use>
-								</svg>
-							</a>
-							<p><a href="">我的优惠券</a></p>
-						</li>
-						<li class="li_p">
-							<a href="">
-								<svg class="icon" aria-hidden="true" >
-  									<use xlink:href="#icon-shoucang1"></use>
-								</svg>
-							</a>
-							<p><a href="">品牌收藏</a></p>
-						</li>
-						<li class="li_p">
-							<a href="">
-								<svg class="icon" aria-hidden="true" >
-  									<use xlink:href="#icon-shoucang"></use>
-								</svg>
-							</a>
-							<p><a href="">商品收藏</a></p>
-						</li>
-						<li class="li_p">
-							<a href="">
-								<svg class="icon" aria-hidden="true" >
-  									<use xlink:href="#icon-zuji"></use>
-								</svg>
-							</a>
-							<p><a href="">我的足迹</a></p>
-						</li>
-						<p style="height: 20px;width:30px;"></p>
-					</ul>
-					<div class="sidebar-bottom">
-						<ul>
-							<li class="li_p">
-								<a href="">
-									<svg class="icon" aria-hidden="true" >
-	  									<use xlink:href="#icon-bianji"></use>
-									</svg>
-								</a>
-								<p><a href="">会员反馈</a></p>
-							</li>
-							<li class="li_p back-top">
-								<a href="javascript:void(0);">
-									<svg class="icon" aria-hidden="true" >
-	  									<use xlink:href="#icon-fanhui2"></use>
-									</svg>
-								</a>
-								<p><a href="">回到顶部</a></p>
-							</li>
-							<p style="height: 20px;width:30px;"></p>
-						</ul>
-					</div>
-				</div>
+				
 			</div>
+			<script type="text/javascript">
+				$("#J_sidebar").load("sidebar.html");
+			</script>
 			<div id="wenjuan">
 				<a href=""><img src="../imgs/201705191057281608.png"/></a>
 			</div>

@@ -1,97 +1,10 @@
 $(function() {
 
 	/*左上角地址*/
-	$(".header-top-con .address:first-child").hover(function() {
-		$(this).attr({
-			class: "address_2"
-		});
-		$(this).css({
-			background: "#fff",
-			border: "1px solid #cdcdcd"
-		});
-		$(".adds").css("display", "block");
-	}, function() {
-		$(this).attr({
-			class: "address"
-		});
-		$(".adds").css("display", "none");
-		$(this).css({
-			background: "",
-			border: ""
-		});
-	});
-	/*所有span划过的时候的样式*/
-	$("span a").hover(function() {
-		$(this).css({
-			color: "#f10582"
-		});
-	}, function() {
-		$(this).css({
-			color: ""
-		});
-	});
-	/*top_ul中的li划过的时候变三角图标*/
-	$(".top_ul li").hover(function() {
-		$(this).find("i[class='ico-dis']").attr({
-			class: "ico-red"
-		});
 
-		$(this).find("div:first").css("display", "block");
-		if($(this).hasClass("ok1")) {
-			$(this).css({
-				background: "#fff",
-				borderBottom: "0",
-				boxSizing: "border-box",
-				border: "1px solid #cdcdcd"
-			});
-		}
-		/*斜杠消失*/
-		$(this).find("o").html(" ");
-	}, function() {
-		$(this).find("i[class='ico-red']").attr({
-			class: "ico-dis"
-		});
-		$(this).find("div:first").css("display", "none");
-		$(this).css({
-			background: "",
-			borderColor: "#f5f5f5",
-			borderBottom: "0"
-		});
-		$(this).find("o").html("/");
-	});
-	$(".shop-car").hover(function() {
-		$(this).find("a").eq(0).css("color", "#f10582");
-	}, function() {
-		$(this).find("a").eq(0).css("color", "");
-	})
-	/*导航固定*/
-	window.onscroll = function() {
-		var nav = document.getElementsByClassName("main-nav")[0];
-		var _top = document.documentElement.scrollTop || document.body.scrollTop;
-		if(_top > 150) {
-			nav.style.position = "fixed";
-			nav.style.top = 0;
-		} else {
-			nav.style.position = "absolute";
-			nav.style.top = "128px";
-		}
-	}
-	/*侧边栏*/
-	$(".li_p").hover(function() {
-		$(this).find("p").stop().animate({
-			"right": "38px"
-		}, 200);
-	}, function() {
-		$(this).find("p").stop().animate({
-			"right": "-100px"
-		}, 200);
-	});
-	$(".back-top").on("click", function() {
-		$(window).scrollTop(0);
-	});
 	/*banner轮播*/
 	//定义接口数据
-	var imgData = ["imgs/1467620677036.jpg", "imgs/1467620750077.jpg", "imgs/1467620773404.jpg", "imgs/1467620677036.jpg", "imgs/1467620750077.jpg"];
+	var imgData = ["../imgs/1467620677036.jpg", "../imgs/1467620750077.jpg", "../imgs/1467620773404.jpg", "../imgs/1467620677036.jpg", "../imgs/1467620750077.jpg"];
 	var txtData = ["端午节88折活动", "从头焕新的变美秘笈", "型童迎新 唤醒夏日", "夏之美履 你要get到的时髦套路"];
 	var index = 0;
 	var timer = setInterval(banner_move, 3000);
@@ -118,5 +31,39 @@ $(function() {
 		banner_move();
 	}, function() {
 		timer = setInterval(banner_move, 3000);
+	});
+	/*计时器函数<!--所有会场模板对应的js代码-->*/
+	$.get("../json/all_brand.json", function(data) {
+		var html = template("all-brand", {
+			"list": data
+		});
+		document.getElementById("J-index-floor").innerHTML = html;
+		$(".brand-item").hover(function() {
+			$(this).animate({
+				"opacity": ".6"
+			}, 500, function() {
+				$(this).animate({
+					"opacity": "1"
+				}, 500);
+			});
+			$(this).find(".shoucang").fadeIn(100);
+		}, function() {
+			$(this).find(".shoucang").fadeOut(100);
+		});
+		var now = new Date();
+		for(var i = 0; i < $(".times").size(); i++) {
+			var nextDate = new Date($(".times").eq(i).html());
+			var tim = Math.round(dateUtil.getChaDays(now, nextDate));
+			var day = Math.round(tim / (60 * 60 * 24));
+			$(".times").eq(i).html(tim);
+		}
+		setInterval(function() {
+			for(var i = 0; i < $(".times").size(); i++) {
+				var s = parseInt($(".times").eq(i).html()) - 1;
+				$(".times").eq(i).html(s);
+			}
+
+		}, 1000)
+
 	})
 })

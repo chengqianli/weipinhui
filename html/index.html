@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>my-唯品会</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../font/iconfont.js"></script>
+		<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/template.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/date&&cookie.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.icon {
+			   width: 1em; height: 1em;
+			   vertical-align: -0.15em;
+			   fill: currentColor;
+			   overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<header id="common-header">
+			
+		</header>
+		<script type="text/javascript">
+			$("#common-header").load("header.html");
+		</script>
+		<!--banner大广告栏-->
+		<div class="index-content-box">
+			<div class="index-content">
+				<div class="center-con">
+					<ul>
+						<li style="z-index: 4;"><a href=""><img src="../imgs/14957661107062.jpg" alt="" /></a></li>
+						<li style="z-index: 3;"><a href=""><img src="../imgs/14957854133511.jpg" alt="" /></a></li>
+						<li style="z-index: 2;"><a href=""><img src="../imgs/14957896957268.jpg" alt="" /></a></li>
+						<li style="z-index: 1;"><a href=""><img src="../imgs/14958499238609.jpg" alt="" /></a></li>
+					</ul>
+					<span class="left"><img src="../imgs/arrowLeft-1.png"/></span>
+					<span class="right"><img src="../imgs/arrowRight-1.png"/></span>
+				</div>
+				<div class="banner-txt">
+					<ul>
+						<li>从头焕新的变美秘笈</li>
+						<li>夏之美履 你要get到的时髦套路</li>
+						<li>型童迎新 唤醒夏日</li>
+						<li>端午节88折活动</li>
+					</ul>
+
+					<div class="underline">
+						
+					</div>
+				</div>
+			</div>
+				<!--精选标题-->
+				<div class="shop-title">
+
+				</div>
+				<!--精选内容-->
+				<div id="jxs">
+					
+				</div>
+				
+				<script id ="jx-goods" type="text/html">
+					{{each list as value}}
+						<div class="jx-good" style="background: url({{value.bg_img}}) no-repeat center top;">
+							<div class="good-pro">
+								<div class="good-img">
+									{{each value.goods_img as item i}}
+										<a href="goods_list.html" target="_blank">
+											<img src={{item}}/>
+											<p>{{value.goods_price[i]}}</p>
+										</a>
+									{{/each}}
+									
+								</div>
+								<a href="">
+									<img src={{value.logo}} class="logo"/>
+								</a>
+								<span class="shoucang">
+									<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-shoucang1"></use>
+									</svg>
+									<span>收藏品牌</span>
+								</span>
+								<a href="" class="login">进入专场</a>
+							</div>	
+						</div>
+					{{/each}}
+				</script>
+				<script type="text/javascript">
+					$(function(){
+						$.get("../json/jx_goods.json",function(data){
+							var html = template("jx-goods",{"list":data});
+							document.getElementById("jxs").innerHTML=html;
+							$(".jx-good").hover(function(){
+								$(this).find(".good-pro").fadeIn();
+							},function(){
+								$(this).find(".good-pro").fadeOut();
+							})
+						})
+					})
+					
+				</script>
+				<!--所有品牌-->
+				<div id="J-index-floor">
+					
+				</div>
+				<!--所有会场的模板-->
+				<script id="all-brand" type="text/html">
+					{{each list as value}}
+							<div class="title">
+								<img src={{value.title}}/>
+								<a href="">
+									<span>
+										{{value.txt}}
+										<svg class="icon" aria-hidden="true">
+			  								<use xlink:href="#icon-gengduo1"></use>
+										</svg>
+									</span>
+								</a>
+							</div>
+							<div class="brand-box">
+							{{each value.imgsrc as item i}}
+								<div class="brand-item">
+									<a href="goods_list.html" target="_blank">
+										<img src={{item}}/>
+										<div class="brand-info">
+											<span class="left">{{value.imginfo[i]}}</span>
+											<span class="right">
+												<svg class="icon" aria-hidden="true">
+		  											<use xlink:href="#icon-daojishi"></use>
+												</svg>
+												剩<span class="times">{{value.time[i]}}</span>秒
+											</span>
+											<a href="">
+												<span class="shoucang">
+													<svg class="icon" aria-hidden="true">
+  														<use xlink:href="#icon-shoucang1"></use>
+													</svg>
+													<span>收藏品牌</span>
+												</span>
+											</a>
+										</div>
+									</a>
+								</div>
+							{{/each}}
+							
+						</div>
+						<div class="more-brand">
+							<a href="">
+								{{value.more}}
+								<svg class="icon" aria-hidden="true">
+  									<use xlink:href="#icon-gengduo1"></use>
+								</svg>
+							</a>
+						</div>
+					{{/each}}
+				</script>
+				<!--所有会场模板对应的js代码-->
+				<script type="text/javascript">
+					
+				</script>
+				<!--明日预告-->
+				<div id="tomorrow">
+					<div class="title">
+						<img src="../imgs/tomorrow.png"/>
+					</div>
+					<div id="tomorrow-goods">
+						
+					</div>
+				</div>
+				<!--明日预告模板-->
+				<script id="tomm" type="text/html">
+					{{each list as value}}
+						{{each value.imgsrc as item i}}
+						<div class="tom-item">
+							<a href="goods_list.html" target="_blank">
+								<img src={{item}}/>
+								<span  class="good">抢先抢好货 &gt;</span>
+							</a>
+							<div class="item-info">
+								<a href="">
+									{{value.imginfo[i]}}
+								</a>
+								<a href="" class="shoucang">
+									<span>
+										<svg class="icon" aria-hidden="true">
+  											<use xlink:href="#icon-shoucang1"></use>
+										</svg>
+										<span>收藏品牌</span>
+									</span>
+								</a>
+							</div>
+							<div class="tel">
+								<form action="" method="post">
+									<input type="text" id="" placeholder="请输入邮箱或手机号码"/>|<a href="">提醒我</a>
+									
+								</form>
+							</div>
+						</div>
+						{{/each}}
+						<div class="more-brand">
+							<a href="">
+								{{value.more}}
+								<svg class="icon" aria-hidden="true">
+  									<use xlink:href="#icon-gengduo1"></use>
+								</svg>
+							</a>
+						</div>
+					{{/each}}
+				</script>
+				<!--明日预告模板对应的js代码-->
+				<script type="text/javascript">
+					$.get("../json/tomorrow.json",function(data){
+						var html = template("tomm",{"list":data});
+						document.getElementById("tomorrow-goods").innerHTML=html;
+						$(".tom-item").hover(function(){
+							$(this).find(".shoucang").fadeIn(200);
+							$(this).find(".tel").fadeIn();
+							$(this).animate({"opacity":".7"},200,function(){
+								$(this).animate({"opacity":"1"});
+							});
+						},function(){
+							$(this).find(".shoucang").fadeOut(200);
+							$(this).find(".tel").fadeOut();
+						})
+					})
+					
+				</script>
+				<!--底部html结构-->
+				<div id="footer">
+					
+				</div>
+				<!--底部中间列表模板-->
+				<script id ="foot" type="text/html">
+					{{each list as value}}
+						<ul>
+							<span>{{value.title}}</span>
+							{{each value.lis as item}}
+							<a href=""><li>{{item}}</li></a>
+							{{/each}}
+						</ul>
+					{{/each}}
+				</script>
+				<!--底部中间列表模板js代码-->
+				<script type="text/javascript">
+					$("#footer").load("footer.html");
+				</script>
+			<!--楼梯-->
+			<div class="stair">
+				<a href="javascript:void(0);" class="hover">
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-jingxuan"></use>
+					</svg>
+					<span>精选</span>
+				</a>
+				<a href="javascript:void(0);">
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-nvzhuang"></use>
+					</svg>
+					<span>女装</span>
+				</a>
+				<a href="javascript:void(0);">
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-xiebao"></use>
+					</svg>
+					<span>鞋包</span>
+				</a>
+				<a href="javascript:void(0);">
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-nanzhuang"></use>
+					</svg>
+					<span>男士</span>
+				</a>
+				<a href="javascript:void(0);">
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-yundong"></use>
+					</svg>
+					<span>运动</span>
+				</a>
+				<a href="javascript:void(0);">
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-shoubiao"></use>
+					</svg>
+					<span>饰品</span>
+				</a>
+				<a href="javascript:void(0);">
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-icon"></use>
+					</svg>
+					<span>美妆</span>
+				</a>
+				<a href="javascript:void(0);">
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-icon1"></use>
+					</svg>
+					<span>母婴</span>
+				</a>
+				<a href="javascript:void(0);">
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-jujia"></use>
+					</svg>
+					<span>居家</span>
+				</a>
+				<a href="javascript:void(0);">
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-guoji"></use>
+					</svg>
+					<span>国际</span>
+				</a>
+				<a href="javascript:void(0);">
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-shenghuo"></use>
+					</svg>
+					<span>生活</span>
+				</a>
+				<a href="javascript:void(0);">
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-yugao"></use>
+					</svg>
+					<span>预告</span>
+				</a>
+			</div>
+			<!--楼梯的js代码-->
+			<script type="text/javascript">
+				window.onload=function(){
+					var f1 = $(".shop-title").offset().top;
+					var f2 = $(".title");
+					move();
+					$(window).scroll(move);
+					function move(){
+						var scrolltop = $(window).scrollTop();
+						if(scrolltop>=f1-100&&scrolltop<=f2.eq(0).offset().top-100){
+							$(".stair").fadeIn(100);
+							$(".stair a").eq(0).addClass("hover").siblings().removeClass("hover");
+						}else if(scrolltop<=f1-100){
+							$(".stair").fadeOut(100);
+						}else{
+							$(".stair").fadeIn(100);
+							for(var i = 0; i < f2.length-1; i++){
+								if((scrolltop>=f2.eq(i).offset().top-300)&&(scrolltop<=f2.eq(i+1).offset().top)){
+									$(".stair a").eq(i+1).addClass("hover").siblings().removeClass("hover");
+								}
+								if(scrolltop>=f2.eq(f2.length-1).offset().top-300){
+									$(".stair a").eq($(".stair a").length-1).addClass("hover").siblings().removeClass("hover");						
+								}
+							}
+						}
+					}
+					$(".stair a").on("click",function(){
+						$(window).off("scroll");
+						var index = $(this).index();
+						if(index==0){
+							$(".stair a").eq(0).addClass("hover").siblings().removeClass("hover");
+							$(window).scrollTop(f1-50);
+							$(window).on("scroll",move);
+							
+						}else{
+							$(".stair a").eq(index).addClass("hover").siblings().removeClass("hover");
+							$(window).scrollTop(f2.eq(index-1).offset().top-50);
+							$(window).on("scroll",move);
+						}
+						
+					})
+				}
+				
+			</script>
+			<!--侧边栏-->
+			<div id="J_sidebar" class="m-sidebarcom">
+				
+			</div>
+			<script type="text/javascript">
+				$("#J_sidebar").load("sidebar.html");
+			</script>
+			<div id="wenjuan">
+				<a href=""><img src="../imgs/201705191057281608.png"/></a>
+			</div>
+		</div>
+		
+	</body>
+	
+</html>
